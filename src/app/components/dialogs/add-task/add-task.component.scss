@@ -1,0 +1,27 @@
+.mat-divider {
+    border-top: 3px dashed darkorange;
+    margin-bottom: 36px;
+}
+
+mat-form-field {
+    width: 100%;
+    font-size: 18px;
+}
+
+mat-checkbox {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.mat-dialog-content {
+    overflow: hidden;
+}
+
+.mat-dialog-actions {
+    justify-content: flex-end;
+}
+
+button {
+    width: 90px;
+    padding: 5px;
+}

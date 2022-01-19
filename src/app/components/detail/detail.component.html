@@ -1,0 +1,3 @@
+<app-task-item *ngIf="task" [task]="task" [isLast]="true">
+</app-task-item>
+<h1 *ngIf="!task" class="message">Task not found</h1>

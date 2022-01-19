@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>{{ title }}</h1>
+<mat-divider></mat-divider>
+<div mat-dialog-content>
+    <mat-form-field appearance="legacy">
+        <mat-label>Task</mat-label>
+        <input matInput [(ngModel)]="text" cdkFocusInitial placeholder="Task" autocomplete="off">
+    </mat-form-field>
+    <mat-form-field appearance="legacy">
+        <mat-label>Date & Time</mat-label>
+        <input matInput [(ngModel)]="date" placeholder="Date & Time" autocomplete="off">
+    </mat-form-field>
+    <mat-checkbox [(ngModel)]="reminder">Reminder</mat-checkbox>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)="create()">Create</button>
+</div>

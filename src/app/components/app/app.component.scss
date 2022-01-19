@@ -1,0 +1,20 @@
+.container {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    border: 1px solid lightgray;
+}
+
+.content {
+    height: 80%;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkblue;
+}

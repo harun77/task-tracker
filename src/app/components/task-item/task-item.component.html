@@ -1,0 +1,16 @@
+<div class="container" (dblclick)="onToggle($event)">
+    <div class="line">
+        <div class="info">
+            <h2 [class.reminder]="isReminder">{{ task.text }}</h2>
+            <p>{{ task.date }}</p>
+        </div>
+        <div *ngIf="showActions" class="action">
+            <mat-icon class="icon" (click)="onDelete($event)">close</mat-icon>
+            <a [routerLink]="['/detail', task.id]">
+                <mat-icon class="icon">open_in_new</mat-icon>
+            </a>
+        </div>
+        <a *ngIf="!showActions" [routerLink]="['/home']">Go home</a>
+    </div>
+    <mat-divider *ngIf="!isLast"></mat-divider>
+</div>
